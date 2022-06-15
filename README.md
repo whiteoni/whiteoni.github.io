@@ -1,2 +1,2 @@
 # whiteoni.github.io
- My webstie blog
+ My webstie & blog
