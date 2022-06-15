@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html> 
+   <head>
+      <title>Whiteoni</title>
+      <link rel="icon" href="images/favicon.png">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="mainstyle.css">
+      <link rel="stylesheet" href="constants.css">
+      <link rel="stylesheet" href="index.css">
+
+      <script src="mainscript.js"></script>
+      <script src="index.js"></script>
+   </head>
+   
+   <body>
+      <div class="layout-column">
+         <div >
+            <table id="logo-slide" class="w-100x">
+               <tr><td></td></tr>   
+               <tr><td>
+                  <div id="logo-panel">
+                     <object type="image/svg+xml" data="logo.svg" class="w-100x"></object>
+                  </div>      
+               </td></tr>
+               <tr><td></td></tr>   
+            </table>            
+         </div>
+         <div class="w-100x" style="display: flex; justify-content: center;">
+            <div id="curriculum" class="center layout-column">
+               <div class="pt-25 center w-100x">
+                  <img src="images/fabio.jpg" class="fabio-img" width="200" height="200"/>
+               </div>
+
+               <div class="pt-25"></div>
+               <!-- About -->
+               <div class="pb-60 center">
+                  <div class="layout-column">
+                     <h2>Su di me</h2>
+                     <span>
+                        Sono <i>Bianconi Fabio</i>, classe 95. <br>
+                        Vivo in un paese nella provincia di <i>Verona</i>, la citt&aacute di Romeo e Giulietta, dei dolci e sede del vino Valpolicella.
+                        Vivendo in campagna la mia infanzia &egrave; stata soprattutto all'aria aperta nei campi di olivi e vigneti.
+                        Il computer nella nostra vita di famiglia arriv&ograve; tardi ma subito si accese la <i>curiosit&aacute;</i> in questo creativo strumento
+                     </span>
+                  </div>
+               </div>
+               <!-- Competenze -->
+               <div class="pb-60 center w-100x">
+                  <div class="layout-column w-100x">
+                     <h2>Competenze</h2>
+                     <span>
+                        Ho esperienza nel mondo del lavoro da quasi 7 anni di cui 6 all'interno del mondo IT <br>
+                        Attraverso il lavoro e per mio desiderio ho acquisito competenze su vari fronti dell'informatica <br>
+
+                     </span>
+                     <div class="tiles tiles-competenze pos-relative" style="max-width: 700px;">
+                        <!-- Frontend -->
+                        <div class="tile show-onscroll" onclick="openDialog('dialogFrontend')">
+                           <img src="images/visibility.svg" width="60"/>
+                           <h3>Frontend</h3>
+                        </div>                        
+                        <div id="dialogFrontend" class="dialog-bg" onclick="closeDialog()"> 
+                           <div class="dialog ">
+                              <div class="layout-column">
+                                 <h1>
+                                    Frontend
+                                 </h1>
+                                 <span>
+                                    Ovvero tutto quello che rende un applicazione o un sito bello da vedere e facile da usare <br/>
+                                    <br/>
+                                    Esempi di strumenti, linguaggi e framework che conosco
+                                    <br/>
+                                 </span>
+                                 <div class="pt-25"></div>
+                                 <div class="tiles view-scalable">
+                                    <div class="layout-column">
+                                       <img src="images/logo_html.svg" class="icon-120 ml-20 mr-20"/>
+                                       <p>HTML</p>
+                                    </div>
+                                    <div class="layout-column ">
+                                       <img src="images/logo_javascript.png" class="icon-90 ml-20 mr-20"/>
+                                       <p>Javascript</p>
+                                    </div>                              
+                                    <div class="layout-column ">
+                                       <img src="images/logo_angular.svg" class=" icon-110 ml-20 mr-20"/>
+                                       <p>Angular</p>
+                                    </div>                                                        
+                                    <div class="layout-column ">
+                                       <img src="images/logo_vue.svg" class=" icon-90 ml-20 mr-20"/>
+                                       <p>Vue</p>
+                                    </div>
+                                 </div>
+                                 <div class="pt-25"></div>
+                              </div>
+                           </div>
+                        </div>             
+
+                        <!-- Backend -->
+                        <div class="tile show-onscroll" onclick="openDialog('dialogBackend')">
+                           <img src="images/lightbulb.svg" width="60"/>
+                           <h3>Backend</h3>
+                        </div>       
+                        <div id="dialogBackend" class="dialog-bg" onclick="closeDialog()"> 
+                           <div class="dialog">
+                              <div class="layout-column">
+                                 <h1>
+                                    Backend
+                                 </h1>
+                                 <span>
+                                    La logica e le prestazioni sono tutte nell'insieme del backend <br/>
+                                    <br/>
+                                    Esempi di linguaggi di programmazione che utilizzo spesso
+                                 </span>
+                                 <div class="pt-25"></div>
+                                 <div class="tiles view-scalable">
+                                    <div class="layout-column ">
+                                       <img src="images/logo_cs.svg" class="icon-90  ml-20 mr-20"/>
+                                       <p>C#</p>
+                                    </div>
+                                    <div class="layout-column">
+                                       <img src="images/logo_php.svg" class="icon-120 ml-20 mr-20"/>
+                                       <p>php</p>
+                                    </div>                              
+                                    <div class="layout-column">
+                                       <img src="images/logo_cpp.svg" class="icon-90 ml-20 mr-20"/>
+                                       <p>C++</p>
+                                    </div>                                                        
+                                    <div class="layout-column">
+                                       <img src="images/logo_java.svg" class="icon-java ml-20 mr-20"/>
+                                       <p>Java</p>
+                                    </div>
+                                 </div>
+                                 <div class="pt-25"></div>
+                              </div>
+                           </div>
+                        </div>             
+
+                        <!-- Database -->
+                        <div class="tile show-onscroll" onclick="openDialog('dialogDatabase')">
+                           <img src="images/table.svg" width="60"/>
+                           <h3>Database</h3>
+                        </div>                              
+                        <div id="dialogDatabase" class="dialog-bg" onclick="closeDialog()"> 
+                           <div class="dialog">
+                              <div class="layout-column">
+                                 <h1>
+                                    Database
+                                 </h1>
+                                 <span>
+                                    Ovvero la memoria e la banca dati di un'applicazione <br/>
+                                    <br/>
+                                    Ampia conoscenza del linguaggio SQL e utilizzo nei DBMS pi&ugrave; conosciuti
+                                 </span>
+                                 <div class="pt-25"></div>
+                                 <div class="tiles view-scalable">
+                                    <div class="layout-column m-25">
+                                       <img src="images/logo_microsoftsql.png" class="icon-80" style="margin-left: 82px;"/>
+                                       <p>Microsoft SQL Server Management</p>
+                                    </div>
+                                    <div class="layout-column m-25">
+                                       <img src="images/logo_mysql.svg" class="icon-120" style="padding-left:20px;"/>
+                                       <p>MySQL / SQLAdmin</p>
+                                    </div>
+                                 </div>
+                                 <div class="pt-25"></div>
+                              </div>
+                           </div>
+                        </div>   
+                        
+                        <!-- Altro -->
+                        <div class="tile show-onscroll" onclick="openDialog('dialogMore')">
+                           <img src="images/face.svg" width="60"/>
+                           <h3>Altro</h3>
+                        </div>
+                        <div id="dialogMore" class="dialog-bg" onclick="closeDialog()"> 
+                           <div class="dialog">
+                              <div class="layout-column">
+                                 <h1>
+                                    Altro
+                                 </h1>
+                                 <span>
+                                    Ulteriori esempi di competenze acquisite
+                                 </span>
+                                 <div class="pt-25"></div>
+                                 <div class="tiles view-scalable">
+                                    <div class="layout-column m-25">
+                                       <img src="images/logo_ibm.svg" class="icon-120" />
+                                       <p>IBM 3270</p>
+                                    </div>
+                                    <div class="layout-column m-25">
+                                       <img src="images/logo_cobol.png" class="icon-120"/>
+                                       <p>Cobol</p>
+                                    </div>
+                                    <div class="layout-column m-25">
+                                       <img src="images/logo_android.svg" class="icon-90" style="background: white;"/>
+                                       <p>Android</p>
+                                    </div>
+                                 </div>
+                                 <div class="pt-25"></div>
+                              </div>
+                           </div>
+                        </div>   
+
+                     </div>
+                  </div>
+               </div>
+               <!-- Formazione -->
+               <div class="layout-column pb-60">
+                  <h2>Formazione scolastica</h2>
+                  <span>
+                     Ho frequentato l'ITIS G.Marconi di Verona con indirizzo informatica 
+                     conseguendo il diploma di <i>perito informatico</i> nel 2014 con esito 82/100
+                     Durante le scuole superiori ho partecipato a stimolanti eventi come le <i>Olimpiadi di statistica</i> e la Gara di programmazione della <i>Macchina di Turing</i>
+                     e collaborato a vari progetti scolastici utilizzati poi nell'istituto
+                  </span>
+               </div>
+               <!-- Inglese -->
+               <div class="layout-column pb-60">
+                  <h2>Lingua inglese</h2>
+                  <span>
+                     Le mie capacit&agrave di espressione orale e lettura nella lingua inglese sono buone, <br>
+                     sufficienti quelle di scrittura. <br>
+                     Dal 2020 sto frequentando un corso settimanale individuale <br>
+                     con un insegnante per migliorare il mio inglese, <br>
+                     tuttavia non posso negare di avere un accento ancora un po' maccheronico 
+                  </span>
+               </div>
+               <!-- Hobby -->
+               <div class="layout-column pb-60">
+                  <h2>Interessi extra professionali</h2>
+                  <div class="tiles tiles-hobby pt-25 pos-relative">
+                     <!-- Scout -->
+                     <div class="tile show-onscroll" onclick="openDialog('dialogScout')">
+                        <img src="images/fire.svg" width="60"/>
+                        <h3>Scout</h3>
+                     </div>
+                     <div id="dialogScout" class="dialog-bg" onclick="closeDialog()"> 
+                        <div class="dialog">
+                           <div class="layout-column">
+                              <h1>
+                                 Scout
+                              </h1>
+                              <span class="w-100x mb-40" style="text-align: left;">
+                                 Pratico scout con l'associazione laica del <i>CNGEI</i> dal 2009.
+                                 Attraverso lo scautismo ho imparato a <i>relazionarmi</i> sia con le singole persone sia con grandi gruppi, a prendermi <i>responsabilit&agrave;</i> e superare con serenit&agrave; imprevisti e difficolt&agrave;.<br>
+                                 <br>
+                                 Ho partecipato ad eventi nazionali come diretto responsabile educatore ed eventi internazionali come supporto logistico.<br>
+                                 Ho conseguito il riconoscimento <i>Wood Badge</i> cio&eacute; ho completato un percorso di formazione pedagogico riconosciuto dall'organizzazione mondiale del movimento scout<br>
+                              </span>  
+                           </div>
+                        </div>
+                     </div>   
+
+                     <!-- Teatro -->
+                     <div class="tile show-onscroll" onclick="openDialog('dialogTeatro')">
+                        <img src="images/theater.svg" width="60"/>
+                        <h3>Teatro</h3>
+                     </div>
+                     <div id="dialogTeatro" class="dialog-bg" onclick="closeDialog()"> 
+                        <div class="dialog">
+                           <div class="layout-column">
+                              <h1>
+                                 Teatro
+                              </h1>
+                              <span class="w-100x mb-40">
+                                 Ho partecipato a corsi teatrali che hanno migliorato la mie capacit&agrave; di <i>public speaking</i> verso una grande platea <br>
+                              </span>  
+                           </div>
+                        </div>
+                     </div>   
+
+                     <!-- Campane -->
+                     <div class="tile show-onscroll" onclick="openDialog('dialogCampane')">
+                        <img src="images/bell.svg" width="60"/>
+                        <h3>Campane</h3>
+                     </div> 
+                     <div id="dialogCampane" class="dialog-bg" onclick="closeDialog()"> 
+                        <div class="dialog">
+                           <div class="layout-column">
+                              <h1>
+                                 Campane
+                              </h1>
+                              <span class="mb-40">
+                                 Fin da giovane suono le campane a sistema veronese, una curiosa <i>passione</i> che volevo condividere qui
+                              </span>  
+                           </div>
+                        </div>
+                     </div> 
+                  </div>
+
+               </div>
+               <!-- Contatti -->
+               <div class="layout-column pb-60">
+                  <h2>Contatti</h2>
+                  <span>
+                     Perch&eacute; mi firmo whiteoni? <br>
+                     La radice white è intuibile dal mio cognome, se qualcosa &eacute; scritto in inglese ha stile.<br>
+                     Ma perch&eacute; oni? ha forse a che fare con figure mitologiche del folklore nipponico? <br>
+                     E invece no, si tratta solamente della parte finale del cognome. <br>
+                     <br>
+                     Per qualsiasi interesse, contattatemi liberamente nei vari social <br>                     
+                  </span>
+                  <div class="tiles center pt-25 view-scalable">
+                     <a href="https://www.instagram.com/whiteoni_" target="_blank" >
+                        <img src="images/social_instagram.png" class="icon-social show-onscroll" />
+                     </a>
+                     <a href="https://t.me/Whiteoni" target="_blank" >
+                        <img src="images/social_telegram.png" class="icon-social show-onscroll" >
+                     </a>
+                     <a href="https://www.linkedin.com/in/whiteoni" target="_blank" >
+                        <img src="images/social_linkedin.png" class="icon-social show-onscroll" >
+                     </a>
+                     <a href="mailto:fabio@whiteoni.com" target="_blank" >
+                        <img src="images/social_email.png" class="icon-social show-onscroll" style="filter: invert(1);" />
+                     </a>    
+                  </div>   
+                  
+                  <span class="pt-50">
+                     Grazie dell'interesse<br>
+                     <h3> CIAO </h3>
+                  </span>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      
+   </body>
+</html>
