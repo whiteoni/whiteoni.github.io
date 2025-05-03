@@ -19,7 +19,7 @@
 .left{text-align:left;}
 .top{}
 .down{}
-.center{text-align:center; margin: auto; display: flex; justify-content: center;}
+.center{text-align:center; margin: auto; display: flex; justify-content: center; align-items: center;} 
 .br-0{border-radius:0px;}
 .br-1{border-radius:1px;}
 .br-2{border-radius:2px;}
@@ -80,6 +80,7 @@
 .f-white{color: white;}
 .f-black{color: black;}
 .pointer{cursor:pointer;}
+.grabbing{cursor:grabbing;}
 .p-0{padding:0px !important;}
 .pt-0{padding-top:0px !important;}
 .pr-0{padding-right:0px !important;}
@@ -404,40 +405,9 @@
 .pos-relative{position: relative;}
 .pos-absolute{position: absolute;top: 0px;left: 0px;}
 .pos-fixed{position: fixed;}
-
-.layout-row{
-   display: flex;
-   flex-direction: row !important;
-}
-.layout-column{
-   display: flex;
-   flex-direction: column !important;
-}
-.scroll{
-   overflow: scroll;
-}
-.scroll-x{
-   overflow-x: scroll;
-   overflow-Y: hidden;
-}
-.scroll-y{
-   overflow-y: scroll;
-   overflow-x: hidden;
-}
-.scroll-disable{
-   overflow: hidden;
-}
-.scroll-auto{
-   overflow: auto;
-}
-.scroll-x-auto{
-   overflow-x: auto;
-   overflow-y: hidden;
-}
-.scroll-y-auto{
-   overflow-y: auto;
-   overflow-x: hidden;
-}
+.pos-sticky{position: sticky;}
+.layout-row{display: flex; flex-direction: row;}
+.layout-column{display: flex; flex-direction: column;}
 
 
 .sb-1{box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.10);}
@@ -456,5 +426,14 @@
 
 .invert-color-img img{
    filter: invert(1);
+}
+
+.filter-orangered{ filter: brightness(0) saturate(100%) invert(37%) sepia(38%) saturate(6877%) hue-rotate(0deg) brightness(100%) contrast(106%); }
+
+hexagon{
+  display: block;  
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+  background: #3B8686;
 }
 
